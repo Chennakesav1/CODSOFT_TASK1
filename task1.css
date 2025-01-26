@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 50px;
+    background: #608dd6;
+    color: white;
+    position:absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('food-background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    background: #ffcc00;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    gap: 20px;
+    flex-wrap:inherit;
+    padding: 40px 20px;
+}
+
+.menu-item {
+    background: #fff;
+    padding: 15px;
+    flex-direction: column;
+    flex-flow: calc(6);
+    border-radius: 10px;
+    text-align: center;
+    inline-size: 4;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+#about{
+    justify-content: center;
+    align-items: center;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form button {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .menu-container {
+        flex-direction: column;
+    }
+    #contact form {
+        width: 80%;
+    }
+}
